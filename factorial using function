@@ -15,3 +15,31 @@ public class Main {
         printFactorial(n);
     }    
 }
+
+
+//code 2
+
+import java.util.*;
+public class Main
+{
+
+	    public static float printFactorial(float a) {
+	        float factorial = 1;
+	        if(a<0) {
+	            System.out.println("invalid");
+	            return factorial;
+	        }
+	        for(float i=a;i>=1;i--) {
+	            factorial = factorial*i;
+	        }
+	        System.out.println(factorial);
+	        
+	        return factorial;
+	    }
+	    	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float a = sc.nextInt();
+		float factorial = printFactorial(a);
+		
+	}
+}
